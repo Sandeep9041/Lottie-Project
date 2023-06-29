@@ -1,0 +1,23 @@
+/* .container{
+    width:100%;  
+    display: flex;
+     flex-direction: column;
+     align-items:center;
+     justify-content: center;
+     heigth:100vh;
+     background-color:red;
+} */
+
+.mobile{
+width:100%;
+height: 100%;
+/* background-color: red; */
+}
+
+@media (max-width:767px){
+    .mobile{
+        width:355px;
+        height:355px;
+        order:-1;
+    }
+ }

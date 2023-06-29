@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import Lottie from "lottie-react"
 import './App.css';
+import Home from "./Component/img/Home/home";
+import  AboutMoney  from "./Component/AboutMoney/aboutMoney.js";
+import  Block  from "./Component/Blocks/block.js";
+import  Experienced  from "./Component/Experience/experience.js"
+import  Transaction  from "./Component/Transaction/transaction.js"
+import Bottom from "./Component/Bottom/bottom.js";
+import Navbar from "./Component/Navbar/navbar";
+
+
 
 function App() {
   return (
+  
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Lottie animationData = {Girl} /> */}
+      <Navbar />
+      <Home/>
+      
+      <Block />
+      <AboutMoney />
+      <Experienced />
+      <Transaction />
+      <Bottom />
     </div>
   );
 }
